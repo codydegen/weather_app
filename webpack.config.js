@@ -7,6 +7,7 @@ module.exports = {
     sourceMapFilename: '[name].js.map',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
+    publicPath: '/weather_app/',
   },
   module: {
     rules: [
