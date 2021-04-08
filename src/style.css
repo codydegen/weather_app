@@ -1,0 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   Tweaks from following:
+   https://twitter.com/argyleink/status/1371850967822520333
+*/
+
+/* Color picker code taken from here 
+   https://twitter.com/argyleink/status/1293249067305205760 */
+   :root {
+    color-scheme: dark light;
+    
+    /* destructure brand channels */
+    --hue: 280; /* change me!! */
+    --saturation: 100%;
+    --lightness: 30%;
+    
+  
+    
+    /* main body */
+    --text-main: hsl(
+      var(--hue) 
+      var(--saturation)
+      10% /* lower is darker */
+    );
+    
+    --background-main: hsl(
+      var(--hue) 
+      calc(var(--saturation) / 2) 
+      95% /* higher is lighter */
+    );
+  
+    /* header */
+    --background-alt-1: hsl(
+      var(--hue) 
+      var(--saturation)
+      var(--lightness) 
+    );
+  
+    --text-accent-1: hsl(
+      var(--hue)
+      var(--saturation)
+      80%
+    );
+  
+  
+    /* sidebar */
+    --background-alt-2: hsl(
+      var(--hue) 
+      var(--saturation)
+      calc(var(--lightness) * 2/ 3) 
+    );
+  
+    --text-accent-2: hsl(
+      var(--hue)
+      var(--saturation)
+      80%
+    );
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    /* just tweak the lightness */
+    /* maybe desaturate too */
+    
+    :root {
+  
+      --text-main: hsl(
+        var(--hue) 
+        calc(var(--saturation) / 2) 
+        85%
+      );
+  
+      --background-main: hsl(
+        var(--hue) 
+        var(--saturation) 
+        10%
+      );
+  
+      /* header */
+      --text-accent-1: hsl(
+        var(--hue)
+        var(--saturation)
+        10%
+      );
+    
+    --background-alt-1: hsl(
+      var(--hue) 
+      calc(var(--saturation) / 2)
+      70%
+    );
+  
+  
+      /* sidebar */
+      --text-accent-2: hsl(
+        var(--hue)
+        var(--saturation)
+        85%
+      );
+  
+      --background-alt-2: hsl(
+        var(--hue) 
+        var(--saturation)
+        calc(var(--lightness) / 2) 
+      );
+    }
+  
+  } 
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  
+  
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin: unset;
+    font-family: inherit;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+    min-block-size: 100%;
+    min-inline-size: 100%;
+    
+    font-family: system-ui, sans-serif;
+    
+    /* display: grid; */
+    place-content: center;
+    color: var(--text-main);
+    background: var(--background-main);
+    min-block-size: 100%;
+    min-inline-size: 100%;
+    margin: 0;
+    box-sizing: border-box;
+  
+    place-content: center;
+    font-family: system-ui, sans-serif;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  html {
+    block-size: 100%;
+    inline-size: 100%;
+  }
