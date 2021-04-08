@@ -552,7 +552,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 async function getWeather(location) {
-  const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${_config__WEBPACK_IMPORTED_MODULE_1__.default.OPENWEATHERMAP_API_TOKEN}`);
+  const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${_config__WEBPACK_IMPORTED_MODULE_1__.default.OPENWEATHERMAP_API_TOKEN}`);
   const data = await response.json();
   console.log(data);
 }
