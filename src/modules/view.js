@@ -15,7 +15,23 @@ const View = (() => {
     const info = document.createElement('div');
     info.id = 'info';
 
+    const form = document.createElement('form');
+    form.id = 'form';
+
+    const input = document.createElement('input');
+    input.id = 'input';
+    input.type = 'text';
+    input.placeholder = 'Enter City';
+
+    const submit = document.createElement('submit');
+    submit.id = 'submit';
+    submit.textContent = 'Submit';
+    submit.type = 'submit';
+
+    form.appendChild(input);
+    form.appendChild(submit);
     body.appendChild(info);
+    body.appendChild(form);
     content.appendChild(body);
   };
 
@@ -35,7 +51,11 @@ const View = (() => {
 
   const renderWeather = (weather) => {
     const info = document.getElementById('info');
-    info.textContent = JSON.stringify(weather);
+    if (weather.valid) {
+      info.textContent = JSON.stringify(weather);
+    } else {
+      info.textContent = 'City Not Found';
+    }
   };
 
   return {

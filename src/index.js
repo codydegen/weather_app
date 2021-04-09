@@ -5,8 +5,13 @@ import { Model } from './modules/model';
 
 View.renderDocument();
 
-Model.setWeather('Columbus')
-  .then(() => {
+const submit = document.getElementById('submit');
+const input = document.getElementById('input');
+
+submit.addEventListener('click', (e) => {
+  e.preventDefault();
+  Model.setWeather(input.value).then(() => {
     View.renderWeather(Model.getWeather());
     console.log(Model.getTemperature());
   });
+});

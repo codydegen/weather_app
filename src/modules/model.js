@@ -3,6 +3,7 @@ import config from '../config';
 
 const Model = (() => {
   const _weather = {
+    valid: false,
     coord: {
       lon: 0,
       lat: 0,
@@ -23,23 +24,34 @@ const Model = (() => {
 
   let _location = '';
   let _scale = 'F';
+
+  const handleBadRequest = () => {
+    console.log('bad request ');
+    _weather.valid = false;
+  };
+
   const getWeather = () => _weather;
 
   const setWeather = async (location) => {
     _location = location;
     const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${_location}&appid=${config.OPENWEATHERMAP_API_TOKEN}`);
     const data = await response.json();
+    if (!response.ok) {
+      console.log(data);
+      handleBadRequest();
+    } else {
+      _weather.valid = true;
+      _weather.coord.lon = data.coord.lon;
+      _weather.coord.lat = data.coord.lat;
+      _weather.weather.description = data.weather[0].main;
+      _weather.weather.main = data.weather[0].main;
+      _weather.wind.speed = data.wind.speed;
+      _weather.wind.direction = data.wind.deg;
+      _weather.temperature.temperature = data.main.temp;
+      _weather.temperature.feelsLike = data.main.feels_like;
 
-    _weather.coord.lon = data.coord.lon;
-    _weather.coord.lat = data.coord.lat;
-    _weather.weather.description = data.weather[0].main;
-    _weather.weather.main = data.weather[0].main;
-    _weather.wind.speed = data.wind.speed;
-    _weather.wind.direction = data.wind.deg;
-    _weather.temperature.temperature = data.main.temp;
-    _weather.temperature.feelsLike = data.main.feels_like;
-
-    console.log(data);
+      console.log(data);
+    }
   };
 
   const getScale = () => _scale;
