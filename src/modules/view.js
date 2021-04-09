@@ -9,10 +9,14 @@ const View = (() => {
 
   const renderBody = () => {
     const content = document.getElementById('content');
+    const body = document.createElement('div');
+    body.id = 'body';
+
     const info = document.createElement('div');
     info.id = 'info';
 
-    content.appendChild(info);
+    body.appendChild(info);
+    content.appendChild(body);
   };
 
   const renderFooter = () => {
@@ -29,8 +33,14 @@ const View = (() => {
     renderFooter();
   };
 
+  const renderWeather = (weather) => {
+    const info = document.getElementById('info');
+    info.textContent = JSON.stringify(weather);
+  };
+
   return {
     renderDocument,
+    renderWeather,
   };
 })();
 

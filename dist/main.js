@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/ \r\n   v2.0 | 20110126\r\n   License: none (public domain)\r\n   Tweaks from following:\r\n   https://twitter.com/argyleink/status/1371850967822520333\r\n*/\r\n\r\n/* Color picker code taken from here \r\n   https://twitter.com/argyleink/status/1293249067305205760 */\r\n   :root {\r\n    color-scheme: dark light;\r\n    \r\n    /* destructure brand channels */\r\n    --hue: 180; /* change me!! */\r\n    --saturation: 100%;\r\n    --lightness: 30%;\r\n    \r\n  \r\n    \r\n    /* main body */\r\n    --text-main: hsl(\r\n      var(--hue) \r\n      var(--saturation)\r\n      10% /* lower is darker */\r\n    );\r\n    \r\n    --background-main: hsl(\r\n      var(--hue) \r\n      calc(var(--saturation) / 2) \r\n      95% /* higher is lighter */\r\n    );\r\n  \r\n    /* header */\r\n    --background-alt-1: hsl(\r\n      var(--hue) \r\n      var(--saturation)\r\n      var(--lightness) \r\n    );\r\n  \r\n    --text-accent-1: hsl(\r\n      var(--hue)\r\n      var(--saturation)\r\n      80%\r\n    );\r\n  \r\n  \r\n    /* sidebar */\r\n    --background-alt-2: hsl(\r\n      var(--hue) \r\n      var(--saturation)\r\n      calc(var(--lightness) * 2/ 3) \r\n    );\r\n  \r\n    --text-accent-2: hsl(\r\n      var(--hue)\r\n      var(--saturation)\r\n      80%\r\n    );\r\n  }\r\n  \r\n  @media (prefers-color-scheme: dark) {\r\n    /* just tweak the lightness */\r\n    /* maybe desaturate too */\r\n    \r\n    :root {\r\n  \r\n      --text-main: hsl(\r\n        var(--hue) \r\n        calc(var(--saturation) / 2) \r\n        85%\r\n      );\r\n  \r\n      --background-main: hsl(\r\n        var(--hue) \r\n        var(--saturation) \r\n        10%\r\n      );\r\n  \r\n      /* header */\r\n      --text-accent-1: hsl(\r\n        var(--hue)\r\n        var(--saturation)\r\n        10%\r\n      );\r\n    \r\n    --background-alt-1: hsl(\r\n      var(--hue) \r\n      calc(var(--saturation) / 2)\r\n      70%\r\n    );\r\n  \r\n  \r\n      /* sidebar */\r\n      --text-accent-2: hsl(\r\n        var(--hue)\r\n        var(--saturation)\r\n        85%\r\n      );\r\n  \r\n      --background-alt-2: hsl(\r\n        var(--hue) \r\n        var(--saturation)\r\n        calc(var(--lightness) / 2) \r\n      );\r\n    }\r\n  \r\n  } \r\n  \r\n  * {\r\n    box-sizing: border-box;\r\n  }\r\n  \r\n  \r\n  \r\n  html, body, div, span, applet, object, iframe,\r\n  h1, h2, h3, h4, h5, h6, p, blockquote, pre,\r\n  a, abbr, acronym, address, big, cite, code,\r\n  del, dfn, em, img, ins, kbd, q, s, samp,\r\n  small, strike, strong, sub, sup, tt, var,\r\n  b, u, i, center,\r\n  dl, dt, dd, ol, ul, li,\r\n  fieldset, form, label, legend,\r\n  table, caption, tbody, tfoot, thead, tr, th, td,\r\n  article, aside, canvas, details, embed, \r\n  figure, figcaption, footer, header, hgroup, \r\n  menu, nav, output, ruby, section, summary,\r\n  time, mark, audio, video {\r\n    margin: 0;\r\n    padding: 0;\r\n    border: 0;\r\n    font-size: 100%;\r\n    font: inherit;\r\n    vertical-align: baseline;\r\n    margin: unset;\r\n    font-family: inherit;\r\n  }\r\n  /* HTML5 display-role reset for older browsers */\r\n  article, aside, details, figcaption, figure, \r\n  footer, header, hgroup, menu, nav, section {\r\n    display: block;\r\n  }\r\n  body {\r\n    line-height: 1;\r\n    min-block-size: 100%;\r\n    min-inline-size: 100%;\r\n    \r\n    font-family: system-ui, sans-serif;\r\n    \r\n    /* display: grid; */\r\n    place-content: center;\r\n    color: var(--text-main);\r\n    background: var(--background-main);\r\n    min-block-size: 100%;\r\n    min-inline-size: 100%;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n  \r\n    place-content: center;\r\n    font-family: system-ui, sans-serif;\r\n  }\r\n  ol, ul {\r\n    list-style: none;\r\n  }\r\n  blockquote, q {\r\n    quotes: none;\r\n  }\r\n  blockquote:before, blockquote:after,\r\n  q:before, q:after {\r\n    content: '';\r\n    content: none;\r\n  }\r\n  table {\r\n    border-collapse: collapse;\r\n    border-spacing: 0;\r\n  }\r\n  \r\n  html {\r\n    block-size: 100%;\r\n    inline-size: 100%;\r\n  }\r\n\r\n  #content {\r\n    background-color: var(--background-main);\r\n    color: var(--text-main);\r\n  }\r\n\r\n  header {\r\n    background-color: var(--background-alt-1);\r\n    color: var(--text-accent-1);\r\n    height: 10vh;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n  }\r\n\r\n  #info {\r\n    height: 80vh;\r\n  }\r\n\r\n  footer {\r\n    background-color: var(--background-alt-2);\r\n    color: var(--text-accent-2);\r\n    height: 10vh;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n  }", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;;;;;CAKC;;AAED;6DAC6D;GAC1D;IACC,wBAAwB;;IAExB,+BAA+B;IAC/B,UAAU,EAAE,gBAAgB;IAC5B,kBAAkB;IAClB,gBAAgB;;;;IAIhB,cAAc;IACd;;;;KAIC;;IAED;;;;KAIC;;IAED,WAAW;IACX;;;;KAIC;;IAED;;;;KAIC;;;IAGD,YAAY;IACZ;;;;KAIC;;IAED;;;;KAIC;EACH;;EAEA;IACE,6BAA6B;IAC7B,yBAAyB;;IAEzB;;MAEE;;;;OAIC;;MAED;;;;OAIC;;MAED,WAAW;MACX;;;;OAIC;;IAEH;;;;KAIC;;;MAGC,YAAY;MACZ;;;;OAIC;;MAED;;;;OAIC;IACH;;EAEF;;EAEA;IACE,sBAAsB;EACxB;;;;EAIA;;;;;;;;;;;;;IAaE,SAAS;IACT,UAAU;IACV,SAAS;IACT,eAAe;IACf,aAAa;IACb,wBAAwB;IACxB,aAAa;IACb,oBAAoB;EACtB;EACA,gDAAgD;EAChD;;IAEE,cAAc;EAChB;EACA;IACE,cAAc;IACd,oBAAoB;IACpB,qBAAqB;;IAErB,kCAAkC;;IAElC,mBAAmB;IACnB,qBAAqB;IACrB,uBAAuB;IACvB,kCAAkC;IAClC,oBAAoB;IACpB,qBAAqB;IACrB,SAAS;IACT,sBAAsB;;IAEtB,qBAAqB;IACrB,kCAAkC;EACpC;EACA;IACE,gBAAgB;EAClB;EACA;IACE,YAAY;EACd;EACA;;IAEE,WAAW;IACX,aAAa;EACf;EACA;IACE,yBAAyB;IACzB,iBAAiB;EACnB;;EAEA;IACE,gBAAgB;IAChB,iBAAiB;EACnB;;EAEA;IACE,wCAAwC;IACxC,uBAAuB;EACzB;;EAEA;IACE,yCAAyC;IACzC,2BAA2B;IAC3B,YAAY;IACZ,aAAa;IACb,uBAAuB;IACvB,mBAAmB;EACrB;;EAEA;IACE,YAAY;EACd;;EAEA;IACE,yCAAyC;IACzC,2BAA2B;IAC3B,YAAY;IACZ,aAAa;IACb,uBAAuB;IACvB,mBAAmB;EACrB","sourcesContent":["/* http://meyerweb.com/eric/tools/css/reset/ \r\n   v2.0 | 20110126\r\n   License: none (public domain)\r\n   Tweaks from following:\r\n   https://twitter.com/argyleink/status/1371850967822520333\r\n*/\r\n\r\n/* Color picker code taken from here \r\n   https://twitter.com/argyleink/status/1293249067305205760 */\r\n   :root {\r\n    color-scheme: dark light;\r\n    \r\n    /* destructure brand channels */\r\n    --hue: 180; /* change me!! */\r\n    --saturation: 100%;\r\n    --lightness: 30%;\r\n    \r\n  \r\n    \r\n    /* main body */\r\n    --text-main: hsl(\r\n      var(--hue) \r\n      var(--saturation)\r\n      10% /* lower is darker */\r\n    );\r\n    \r\n    --background-main: hsl(\r\n      var(--hue) \r\n      calc(var(--saturation) / 2) \r\n      95% /* higher is lighter */\r\n    );\r\n  \r\n    /* header */\r\n    --background-alt-1: hsl(\r\n      var(--hue) \r\n      var(--saturation)\r\n      var(--lightness) \r\n    );\r\n  \r\n    --text-accent-1: hsl(\r\n      var(--hue)\r\n      var(--saturation)\r\n      80%\r\n    );\r\n  \r\n  \r\n    /* sidebar */\r\n    --background-alt-2: hsl(\r\n      var(--hue) \r\n      var(--saturation)\r\n      calc(var(--lightness) * 2/ 3) \r\n    );\r\n  \r\n    --text-accent-2: hsl(\r\n      var(--hue)\r\n      var(--saturation)\r\n      80%\r\n    );\r\n  }\r\n  \r\n  @media (prefers-color-scheme: dark) {\r\n    /* just tweak the lightness */\r\n    /* maybe desaturate too */\r\n    \r\n    :root {\r\n  \r\n      --text-main: hsl(\r\n        var(--hue) \r\n        calc(var(--saturation) / 2) \r\n        85%\r\n      );\r\n  \r\n      --background-main: hsl(\r\n        var(--hue) \r\n        var(--saturation) \r\n        10%\r\n      );\r\n  \r\n      /* header */\r\n      --text-accent-1: hsl(\r\n        var(--hue)\r\n        var(--saturation)\r\n        10%\r\n      );\r\n    \r\n    --background-alt-1: hsl(\r\n      var(--hue) \r\n      calc(var(--saturation) / 2)\r\n      70%\r\n    );\r\n  \r\n  \r\n      /* sidebar */\r\n      --text-accent-2: hsl(\r\n        var(--hue)\r\n        var(--saturation)\r\n        85%\r\n      );\r\n  \r\n      --background-alt-2: hsl(\r\n        var(--hue) \r\n        var(--saturation)\r\n        calc(var(--lightness) / 2) \r\n      );\r\n    }\r\n  \r\n  } \r\n  \r\n  * {\r\n    box-sizing: border-box;\r\n  }\r\n  \r\n  \r\n  \r\n  html, body, div, span, applet, object, iframe,\r\n  h1, h2, h3, h4, h5, h6, p, blockquote, pre,\r\n  a, abbr, acronym, address, big, cite, code,\r\n  del, dfn, em, img, ins, kbd, q, s, samp,\r\n  small, strike, strong, sub, sup, tt, var,\r\n  b, u, i, center,\r\n  dl, dt, dd, ol, ul, li,\r\n  fieldset, form, label, legend,\r\n  table, caption, tbody, tfoot, thead, tr, th, td,\r\n  article, aside, canvas, details, embed, \r\n  figure, figcaption, footer, header, hgroup, \r\n  menu, nav, output, ruby, section, summary,\r\n  time, mark, audio, video {\r\n    margin: 0;\r\n    padding: 0;\r\n    border: 0;\r\n    font-size: 100%;\r\n    font: inherit;\r\n    vertical-align: baseline;\r\n    margin: unset;\r\n    font-family: inherit;\r\n  }\r\n  /* HTML5 display-role reset for older browsers */\r\n  article, aside, details, figcaption, figure, \r\n  footer, header, hgroup, menu, nav, section {\r\n    display: block;\r\n  }\r\n  body {\r\n    line-height: 1;\r\n    min-block-size: 100%;\r\n    min-inline-size: 100%;\r\n    \r\n    font-family: system-ui, sans-serif;\r\n    \r\n    /* display: grid; */\r\n    place-content: center;\r\n    color: var(--text-main);\r\n    background: var(--background-main);\r\n    min-block-size: 100%;\r\n    min-inline-size: 100%;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n  \r\n    place-content: center;\r\n    font-family: system-ui, sans-serif;\r\n  }\r\n  ol, ul {\r\n    list-style: none;\r\n  }\r\n  blockquote, q {\r\n    quotes: none;\r\n  }\r\n  blockquote:before, blockquote:after,\r\n  q:before, q:after {\r\n    content: '';\r\n    content: none;\r\n  }\r\n  table {\r\n    border-collapse: collapse;\r\n    border-spacing: 0;\r\n  }\r\n  \r\n  html {\r\n    block-size: 100%;\r\n    inline-size: 100%;\r\n  }\r\n\r\n  #content {\r\n    background-color: var(--background-main);\r\n    color: var(--text-main);\r\n  }\r\n\r\n  header {\r\n    background-color: var(--background-alt-1);\r\n    color: var(--text-accent-1);\r\n    height: 10vh;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n  }\r\n\r\n  #info {\r\n    height: 80vh;\r\n  }\r\n\r\n  footer {\r\n    background-color: var(--background-alt-2);\r\n    color: var(--text-accent-2);\r\n    height: 10vh;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n  }"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/ \r\n   v2.0 | 20110126\r\n   License: none (public domain)\r\n   Tweaks from following:\r\n   https://twitter.com/argyleink/status/1371850967822520333\r\n*/\r\n\r\n/* Color picker code taken from here \r\n   https://twitter.com/argyleink/status/1293249067305205760 */\r\n   :root {\r\n    color-scheme: dark light;\r\n    \r\n    /* destructure brand channels */\r\n    --hue: 180; /* change me!! */\r\n    --saturation: 100%;\r\n    --lightness: 30%;\r\n    \r\n  \r\n    \r\n    /* main body */\r\n    --text-main: hsl(\r\n      var(--hue) \r\n      var(--saturation)\r\n      10% /* lower is darker */\r\n    );\r\n    \r\n    --background-main: hsl(\r\n      var(--hue) \r\n      calc(var(--saturation) / 2) \r\n      95% /* higher is lighter */\r\n    );\r\n  \r\n    /* header */\r\n    --background-alt-1: hsl(\r\n      var(--hue) \r\n      var(--saturation)\r\n      var(--lightness) \r\n    );\r\n  \r\n    --text-accent-1: hsl(\r\n      var(--hue)\r\n      var(--saturation)\r\n      80%\r\n    );\r\n  \r\n  \r\n    /* sidebar */\r\n    --background-alt-2: hsl(\r\n      var(--hue) \r\n      var(--saturation)\r\n      calc(var(--lightness) * 2/ 3) \r\n    );\r\n  \r\n    --text-accent-2: hsl(\r\n      var(--hue)\r\n      var(--saturation)\r\n      80%\r\n    );\r\n  }\r\n  \r\n  @media (prefers-color-scheme: dark) {\r\n    /* just tweak the lightness */\r\n    /* maybe desaturate too */\r\n    \r\n    :root {\r\n  \r\n      --text-main: hsl(\r\n        var(--hue) \r\n        calc(var(--saturation) / 2) \r\n        85%\r\n      );\r\n  \r\n      --background-main: hsl(\r\n        var(--hue) \r\n        var(--saturation) \r\n        10%\r\n      );\r\n  \r\n      /* header */\r\n      --text-accent-1: hsl(\r\n        var(--hue)\r\n        var(--saturation)\r\n        10%\r\n      );\r\n    \r\n    --background-alt-1: hsl(\r\n      var(--hue) \r\n      calc(var(--saturation) / 2)\r\n      70%\r\n    );\r\n  \r\n  \r\n      /* sidebar */\r\n      --text-accent-2: hsl(\r\n        var(--hue)\r\n        var(--saturation)\r\n        85%\r\n      );\r\n  \r\n      --background-alt-2: hsl(\r\n        var(--hue) \r\n        var(--saturation)\r\n        calc(var(--lightness) / 2) \r\n      );\r\n    }\r\n  \r\n  } \r\n  \r\n  * {\r\n    box-sizing: border-box;\r\n  }\r\n  \r\n  \r\n  \r\n  html, body, div, span, applet, object, iframe,\r\n  h1, h2, h3, h4, h5, h6, p, blockquote, pre,\r\n  a, abbr, acronym, address, big, cite, code,\r\n  del, dfn, em, img, ins, kbd, q, s, samp,\r\n  small, strike, strong, sub, sup, tt, var,\r\n  b, u, i, center,\r\n  dl, dt, dd, ol, ul, li,\r\n  fieldset, form, label, legend,\r\n  table, caption, tbody, tfoot, thead, tr, th, td,\r\n  article, aside, canvas, details, embed, \r\n  figure, figcaption, footer, header, hgroup, \r\n  menu, nav, output, ruby, section, summary,\r\n  time, mark, audio, video {\r\n    margin: 0;\r\n    padding: 0;\r\n    border: 0;\r\n    font-size: 100%;\r\n    font: inherit;\r\n    vertical-align: baseline;\r\n    margin: unset;\r\n    font-family: inherit;\r\n  }\r\n  /* HTML5 display-role reset for older browsers */\r\n  article, aside, details, figcaption, figure, \r\n  footer, header, hgroup, menu, nav, section {\r\n    display: block;\r\n  }\r\n  body {\r\n    line-height: 1;\r\n    min-block-size: 100%;\r\n    min-inline-size: 100%;\r\n    \r\n    font-family: system-ui, sans-serif;\r\n    \r\n    /* display: grid; */\r\n    place-content: center;\r\n    color: var(--text-main);\r\n    background: var(--background-main);\r\n    min-block-size: 100%;\r\n    min-inline-size: 100%;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n  \r\n    place-content: center;\r\n    font-family: system-ui, sans-serif;\r\n  }\r\n  ol, ul {\r\n    list-style: none;\r\n  }\r\n  blockquote, q {\r\n    quotes: none;\r\n  }\r\n  blockquote:before, blockquote:after,\r\n  q:before, q:after {\r\n    content: '';\r\n    content: none;\r\n  }\r\n  table {\r\n    border-collapse: collapse;\r\n    border-spacing: 0;\r\n  }\r\n  \r\n  html {\r\n    block-size: 100%;\r\n    inline-size: 100%;\r\n  }\r\n\r\n  #content {\r\n    background-color: var(--background-main);\r\n    color: var(--text-main);\r\n  }\r\n\r\n  header {\r\n    background-color: var(--background-alt-1);\r\n    color: var(--text-accent-1);\r\n    height: 10vh;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n  }\r\n\r\n  #body {\r\n    height: 80vh;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n  }\r\n\r\n  #info {\r\n    height: 40vh;\r\n    width: 60vw;\r\n    background-color: var(--background-alt-2);\r\n    color: var(--text-accent-2);\r\n  }\r\n\r\n  footer {\r\n    background-color: var(--background-alt-1);\r\n    color: var(--text-accent-1);\r\n    height: 10vh;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n  }", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;;;;;CAKC;;AAED;6DAC6D;GAC1D;IACC,wBAAwB;;IAExB,+BAA+B;IAC/B,UAAU,EAAE,gBAAgB;IAC5B,kBAAkB;IAClB,gBAAgB;;;;IAIhB,cAAc;IACd;;;;KAIC;;IAED;;;;KAIC;;IAED,WAAW;IACX;;;;KAIC;;IAED;;;;KAIC;;;IAGD,YAAY;IACZ;;;;KAIC;;IAED;;;;KAIC;EACH;;EAEA;IACE,6BAA6B;IAC7B,yBAAyB;;IAEzB;;MAEE;;;;OAIC;;MAED;;;;OAIC;;MAED,WAAW;MACX;;;;OAIC;;IAEH;;;;KAIC;;;MAGC,YAAY;MACZ;;;;OAIC;;MAED;;;;OAIC;IACH;;EAEF;;EAEA;IACE,sBAAsB;EACxB;;;;EAIA;;;;;;;;;;;;;IAaE,SAAS;IACT,UAAU;IACV,SAAS;IACT,eAAe;IACf,aAAa;IACb,wBAAwB;IACxB,aAAa;IACb,oBAAoB;EACtB;EACA,gDAAgD;EAChD;;IAEE,cAAc;EAChB;EACA;IACE,cAAc;IACd,oBAAoB;IACpB,qBAAqB;;IAErB,kCAAkC;;IAElC,mBAAmB;IACnB,qBAAqB;IACrB,uBAAuB;IACvB,kCAAkC;IAClC,oBAAoB;IACpB,qBAAqB;IACrB,SAAS;IACT,sBAAsB;;IAEtB,qBAAqB;IACrB,kCAAkC;EACpC;EACA;IACE,gBAAgB;EAClB;EACA;IACE,YAAY;EACd;EACA;;IAEE,WAAW;IACX,aAAa;EACf;EACA;IACE,yBAAyB;IACzB,iBAAiB;EACnB;;EAEA;IACE,gBAAgB;IAChB,iBAAiB;EACnB;;EAEA;IACE,wCAAwC;IACxC,uBAAuB;EACzB;;EAEA;IACE,yCAAyC;IACzC,2BAA2B;IAC3B,YAAY;IACZ,aAAa;IACb,uBAAuB;IACvB,mBAAmB;EACrB;;EAEA;IACE,YAAY;IACZ,aAAa;IACb,uBAAuB;IACvB,mBAAmB;EACrB;;EAEA;IACE,YAAY;IACZ,WAAW;IACX,yCAAyC;IACzC,2BAA2B;EAC7B;;EAEA;IACE,yCAAyC;IACzC,2BAA2B;IAC3B,YAAY;IACZ,aAAa;IACb,uBAAuB;IACvB,mBAAmB;EACrB","sourcesContent":["/* http://meyerweb.com/eric/tools/css/reset/ \r\n   v2.0 | 20110126\r\n   License: none (public domain)\r\n   Tweaks from following:\r\n   https://twitter.com/argyleink/status/1371850967822520333\r\n*/\r\n\r\n/* Color picker code taken from here \r\n   https://twitter.com/argyleink/status/1293249067305205760 */\r\n   :root {\r\n    color-scheme: dark light;\r\n    \r\n    /* destructure brand channels */\r\n    --hue: 180; /* change me!! */\r\n    --saturation: 100%;\r\n    --lightness: 30%;\r\n    \r\n  \r\n    \r\n    /* main body */\r\n    --text-main: hsl(\r\n      var(--hue) \r\n      var(--saturation)\r\n      10% /* lower is darker */\r\n    );\r\n    \r\n    --background-main: hsl(\r\n      var(--hue) \r\n      calc(var(--saturation) / 2) \r\n      95% /* higher is lighter */\r\n    );\r\n  \r\n    /* header */\r\n    --background-alt-1: hsl(\r\n      var(--hue) \r\n      var(--saturation)\r\n      var(--lightness) \r\n    );\r\n  \r\n    --text-accent-1: hsl(\r\n      var(--hue)\r\n      var(--saturation)\r\n      80%\r\n    );\r\n  \r\n  \r\n    /* sidebar */\r\n    --background-alt-2: hsl(\r\n      var(--hue) \r\n      var(--saturation)\r\n      calc(var(--lightness) * 2/ 3) \r\n    );\r\n  \r\n    --text-accent-2: hsl(\r\n      var(--hue)\r\n      var(--saturation)\r\n      80%\r\n    );\r\n  }\r\n  \r\n  @media (prefers-color-scheme: dark) {\r\n    /* just tweak the lightness */\r\n    /* maybe desaturate too */\r\n    \r\n    :root {\r\n  \r\n      --text-main: hsl(\r\n        var(--hue) \r\n        calc(var(--saturation) / 2) \r\n        85%\r\n      );\r\n  \r\n      --background-main: hsl(\r\n        var(--hue) \r\n        var(--saturation) \r\n        10%\r\n      );\r\n  \r\n      /* header */\r\n      --text-accent-1: hsl(\r\n        var(--hue)\r\n        var(--saturation)\r\n        10%\r\n      );\r\n    \r\n    --background-alt-1: hsl(\r\n      var(--hue) \r\n      calc(var(--saturation) / 2)\r\n      70%\r\n    );\r\n  \r\n  \r\n      /* sidebar */\r\n      --text-accent-2: hsl(\r\n        var(--hue)\r\n        var(--saturation)\r\n        85%\r\n      );\r\n  \r\n      --background-alt-2: hsl(\r\n        var(--hue) \r\n        var(--saturation)\r\n        calc(var(--lightness) / 2) \r\n      );\r\n    }\r\n  \r\n  } \r\n  \r\n  * {\r\n    box-sizing: border-box;\r\n  }\r\n  \r\n  \r\n  \r\n  html, body, div, span, applet, object, iframe,\r\n  h1, h2, h3, h4, h5, h6, p, blockquote, pre,\r\n  a, abbr, acronym, address, big, cite, code,\r\n  del, dfn, em, img, ins, kbd, q, s, samp,\r\n  small, strike, strong, sub, sup, tt, var,\r\n  b, u, i, center,\r\n  dl, dt, dd, ol, ul, li,\r\n  fieldset, form, label, legend,\r\n  table, caption, tbody, tfoot, thead, tr, th, td,\r\n  article, aside, canvas, details, embed, \r\n  figure, figcaption, footer, header, hgroup, \r\n  menu, nav, output, ruby, section, summary,\r\n  time, mark, audio, video {\r\n    margin: 0;\r\n    padding: 0;\r\n    border: 0;\r\n    font-size: 100%;\r\n    font: inherit;\r\n    vertical-align: baseline;\r\n    margin: unset;\r\n    font-family: inherit;\r\n  }\r\n  /* HTML5 display-role reset for older browsers */\r\n  article, aside, details, figcaption, figure, \r\n  footer, header, hgroup, menu, nav, section {\r\n    display: block;\r\n  }\r\n  body {\r\n    line-height: 1;\r\n    min-block-size: 100%;\r\n    min-inline-size: 100%;\r\n    \r\n    font-family: system-ui, sans-serif;\r\n    \r\n    /* display: grid; */\r\n    place-content: center;\r\n    color: var(--text-main);\r\n    background: var(--background-main);\r\n    min-block-size: 100%;\r\n    min-inline-size: 100%;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n  \r\n    place-content: center;\r\n    font-family: system-ui, sans-serif;\r\n  }\r\n  ol, ul {\r\n    list-style: none;\r\n  }\r\n  blockquote, q {\r\n    quotes: none;\r\n  }\r\n  blockquote:before, blockquote:after,\r\n  q:before, q:after {\r\n    content: '';\r\n    content: none;\r\n  }\r\n  table {\r\n    border-collapse: collapse;\r\n    border-spacing: 0;\r\n  }\r\n  \r\n  html {\r\n    block-size: 100%;\r\n    inline-size: 100%;\r\n  }\r\n\r\n  #content {\r\n    background-color: var(--background-main);\r\n    color: var(--text-main);\r\n  }\r\n\r\n  header {\r\n    background-color: var(--background-alt-1);\r\n    color: var(--text-accent-1);\r\n    height: 10vh;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n  }\r\n\r\n  #body {\r\n    height: 80vh;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n  }\r\n\r\n  #info {\r\n    height: 40vh;\r\n    width: 60vw;\r\n    background-color: var(--background-alt-2);\r\n    color: var(--text-accent-2);\r\n  }\r\n\r\n  footer {\r\n    background-color: var(--background-alt-1);\r\n    color: var(--text-accent-1);\r\n    height: 10vh;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n  }"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -470,6 +470,92 @@ const config = {
 
 /***/ }),
 
+/***/ "./src/modules/model.js":
+/*!******************************!*\
+  !*** ./src/modules/model.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Model": () => (/* binding */ Model)
+/* harmony export */ });
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../config */ "./src/config.js");
+/* eslint-disable no-underscore-dangle */
+
+
+const Model = (() => {
+  const _weather = {
+    coord: {
+      lon: 0,
+      lat: 0,
+    },
+    weather: {
+      main: '',
+      description: '',
+    },
+    wind: {
+      speed: 0,
+      direction: 0,
+    },
+    temperature: {
+      temperature: 0,
+      feelsLike: 0,
+    },
+  };
+
+  let _location = '';
+  let _scale = 'F';
+  const getWeather = () => _weather;
+
+  const setWeather = async (location) => {
+    _location = location;
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${_location}&appid=${_config__WEBPACK_IMPORTED_MODULE_0__.default.OPENWEATHERMAP_API_TOKEN}`);
+    const data = await response.json();
+
+    _weather.coord.lon = data.coord.lon;
+    _weather.coord.lat = data.coord.lat;
+    _weather.weather.description = data.weather[0].main;
+    _weather.weather.main = data.weather[0].main;
+    _weather.wind.speed = data.wind.speed;
+    _weather.wind.direction = data.wind.deg;
+    _weather.temperature.temperature = data.main.temp;
+    _weather.temperature.feelsLike = data.main.feels_like;
+
+    console.log(data);
+  };
+
+  const getScale = () => _scale;
+
+  const setScale = (scale) => {
+    if (scale === 'C' || scale === 'F') {
+      _scale = scale;
+    } else {
+      throw new Error('Scale not accepted');
+    }
+  };
+
+  const getTemperature = () => {
+    if (_scale === 'C') {
+      return Math.round(_weather.temperature.temperature - 273.15);
+    }
+    return Math.round((_weather.temperature.temperature - 273.15) * 9 / 5 + 32);
+  };
+
+  return {
+    getWeather,
+    setWeather,
+    getScale,
+    setScale,
+    getTemperature,
+  };
+})();
+
+
+
+
+/***/ }),
+
 /***/ "./src/modules/view.js":
 /*!*****************************!*\
   !*** ./src/modules/view.js ***!
@@ -491,10 +577,14 @@ const View = (() => {
 
   const renderBody = () => {
     const content = document.getElementById('content');
+    const body = document.createElement('div');
+    body.id = 'body';
+
     const info = document.createElement('div');
     info.id = 'info';
 
-    content.appendChild(info);
+    body.appendChild(info);
+    content.appendChild(body);
   };
 
   const renderFooter = () => {
@@ -511,8 +601,14 @@ const View = (() => {
     renderFooter();
   };
 
+  const renderWeather = (weather) => {
+    const info = document.getElementById('info');
+    info.textContent = JSON.stringify(weather);
+  };
+
   return {
     renderDocument,
+    renderWeather,
   };
 })();
 
@@ -597,24 +693,20 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./config */ "./src/config.js");
-/* harmony import */ var _modules_view__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/view */ "./src/modules/view.js");
+/* harmony import */ var _modules_view__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/view */ "./src/modules/view.js");
+/* harmony import */ var _modules_model__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/model */ "./src/modules/model.js");
 /* eslint-disable no-console */
 
 
 
 
-_modules_view__WEBPACK_IMPORTED_MODULE_2__.View.renderDocument();
+_modules_view__WEBPACK_IMPORTED_MODULE_1__.View.renderDocument();
 
-async function getWeather(location) {
-  const info = document.getElementById('info');
-  const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${_config__WEBPACK_IMPORTED_MODULE_1__.default.OPENWEATHERMAP_API_TOKEN}`);
-  const data = await response.json();
-  info.textContent = JSON.stringify(data);
-  console.log(data);
-}
-
-getWeather('columbus');
+_modules_model__WEBPACK_IMPORTED_MODULE_2__.Model.setWeather('Columbus')
+  .then(() => {
+    _modules_view__WEBPACK_IMPORTED_MODULE_1__.View.renderWeather(_modules_model__WEBPACK_IMPORTED_MODULE_2__.Model.getWeather());
+    console.log(_modules_model__WEBPACK_IMPORTED_MODULE_2__.Model.getTemperature());
+  });
 
 })();
 
