@@ -5,13 +5,14 @@ import { Model } from './modules/model';
 
 View.renderDocument();
 
-const submit = document.getElementById('submit');
+const form = document.getElementById('form');
 const input = document.getElementById('input');
 
-submit.addEventListener('click', (e) => {
+form.addEventListener('submit', (e) => {
   e.preventDefault();
   Model.setWeather(input.value).then(() => {
     View.renderWeather(Model.getWeather());
     console.log(Model.getTemperature());
   });
 });
+

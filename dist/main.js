@@ -734,16 +734,17 @@ __webpack_require__.r(__webpack_exports__);
 
 _modules_view__WEBPACK_IMPORTED_MODULE_1__.View.renderDocument();
 
-const submit = document.getElementById('submit');
+const form = document.getElementById('form');
 const input = document.getElementById('input');
 
-submit.addEventListener('click', (e) => {
+form.addEventListener('submit', (e) => {
   e.preventDefault();
   _modules_model__WEBPACK_IMPORTED_MODULE_2__.Model.setWeather(input.value).then(() => {
     _modules_view__WEBPACK_IMPORTED_MODULE_1__.View.renderWeather(_modules_model__WEBPACK_IMPORTED_MODULE_2__.Model.getWeather());
     console.log(_modules_model__WEBPACK_IMPORTED_MODULE_2__.Model.getTemperature());
   });
 });
+
 
 })();
 
